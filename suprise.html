@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Autotrack - Easter Egg</title>
+  </head>
+  <body>
+    <div class="toggle-container">
+      <input type="checkbox" id="nightModeToggle" class="toggle" />
+      <label for="nightModeToggle" class="toggle-label"></label>
+    </div>
+
+    <div class="container">
+      <!-- menubalk -->
+      <div class="menubalk">
+        <!-- logo -->
+        <div class="logo">
+          <a href="homepage.html">
+            <img src="images/logo.png" alt="" width="200px" />
+          </a>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction('myDropdown1')">
+            Auto zoeken
+          </button>
+          <div class="dropdown-content" id="myDropdown1">
+            <a href="autos.html">Alle auto's</a>
+            <a href="">Nieuwe auto's</a>
+            <a href="">Occasions</a>
+            <a href="">Aanbod per regio</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction('myDropdown2')">
+            Autogids
+          </button>
+          <div class="dropdown-content" id="myDropdown2">
+            <a href="">Autotypes</a>
+            <a href="">Automerken</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction('myDropdown3')">
+            Hulp bij kopen
+          </button>
+          <div class="dropdown-content" id="myDropdown3">
+            <a href="">Klantenservices</a>
+            <a href="">Blog</a>
+          </div>
+        </div>
+
+        <div class="rechts-menu">
+          <i class="material-icons" style="color: #0028d8">&#xe7f4;</i>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction('myDropdown4')">
+              Mijn AutoTrack
+            </button>
+            <div class="dropdown-content" id="myDropdown4">
+              <a href="">Login Zakelijk</a>
+              <a href="">Inloggen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="autos">
+        <div class="zijkant">
+          <div class="extra-plaatje">
+            <img src="images/links.png" alt="" width="400px" />
+          </div>
+          <div class="extra-plaatje">
+            <img src="images/zijkant.png" alt="" width="400px" />
+          </div>
+        </div>
+
+        <div class="auto-container">
+          <div class="extra-plaatje">
+            <img src="images/boven.png" alt="" width="100%" />
+          </div>
+          <div class="rij-1">
+            <div class="auto" id="rood">
+              <img src="images/rood.png" alt="rode auto" width="100%" />
+              <div class="koplampen">
+                <!-- Linker koplamp -->
+                <div class="koplamp koplamp-links"></div>
+                <!-- Rechter koplamp -->
+                <div class="koplamp koplamp-rechts"></div>
+              </div>
+            </div>
+            <div class="auto extra-plaatje" id="zwart">
+              <img src="images/zwart.png" alt="zwarte auto" width="100%" />
+              <div class="koplampen">
+                <!-- Linker koplamp -->
+                <div class="koplamp koplamp-links"></div>
+                <!-- Rechter koplamp -->
+                <div class="koplamp koplamp-rechts"></div>
+              </div>
+            </div>
+            <div class="auto" id="oranje">
+              <img src="images/oranje.png" alt="oranje auto" width="100%" />
+              <div class="koplampen">
+                <!-- Linker koplamp -->
+                <div class="koplamp koplamp-links"></div>
+                <!-- Rechter koplamp -->
+                <div class="koplamp koplamp-rechts"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rij-2">
+            <div class="auto extra-plaatje">
+              <img src="images/grijs.png" alt="grijze auto" width="100%" />
+            </div>
+            <div class="auto" id="groen">
+              <a href="minicooper.html">
+                <img src="images/groen.png" alt="groene auto" width="100%" />
+              </a>
+            </div>
+            <div class="auto extra-plaatje">
+              <img src="images/blauw.png" alt="blauwe auto" width="100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="game-area" class="hidden">
+        <div id="score-board" class="hidden">
+          Score: <span id="score">0</span>
+        </div>
+        <div id="player-car">
+          <img src="images/playerCar.png" alt="player car" />
+        </div>
+      </div>
+
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>

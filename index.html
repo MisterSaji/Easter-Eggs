@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Tekenset instellen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Viewport-instellingen voor responsief ontwerp -->
+    <title>Draaiend Wiel</title>
+    <!-- Titel van de pagina -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link naar externe CSS -->
+  </head>
+  <body>
+    <div class="wheel-container">
+      <div class="pointer"></div>
+      <canvas id="wheel" width="500" height="500"></canvas>
+      <!-- Canvas voor het wiel -->
+      <button id="spin">Draai het Wiel</button>
+      <!-- Knop om het wiel te draaien -->
+      <div id="confetti-container"></div>
+      <!-- Container voor confetti -->
+    </div>
+
+    <audio id="geluid" src=""></audio>
+    <!-- Audio element voor geluidseffecten -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <!-- Confetti script -->
+    <script src="miauw.js"></script>
+    <!-- Aangepaste JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
